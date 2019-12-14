@@ -1,16 +1,22 @@
 body{    
     margin: 0 auto;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 a{
     text-decoration: none;
     color: black;
 }
+
+h2{font-size: 2.5em;}
+h3{font-size: 1.5em;}
+
 .wrap-container{
     max-width: 1200px;
     align-items: center;
 }
 .section{position: relative; height: 100vh;}
+.section a{color: white;text-decoration: underline}
 
 .left{float: left;}
 .right{float: right;}
@@ -24,9 +30,23 @@ nav {
     z-index: 2;
 }
 
+nav:hover{
+    background-color: white;
+}
+
+nav:hover .toprightmenu .menuul li a, nav:hover .mainmenu .menuul li a{
+    color: #445870;
+}
+
 .toprightmenu .menuul li, .mainmenu .menuul li {
     padding-right: 20px;
 }
+
+.toprightmenu .menuul li a, .mainmenu .menuul li a{
+    color: white;
+}
+
+.mainmenu .menuul li a{font-size: 18px}
 
 .toprightmenu{
     margin: 0;
@@ -34,6 +54,7 @@ nav {
 }
 .topmenu{
     font-size: 17px;
+    border-bottom: 1px solid white;
 }
 
 .topmenu, .menu{
@@ -67,6 +88,7 @@ nav {
 
 .section{
     min-height: 600px;
+    color: white;
 }
 
 .section.one{
