@@ -1,6 +1,100 @@
+body{    
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.wrap-container{
+    max-width: 1200px;
+    align-items: center;
+}
+.section{position: relative; height: 100vh;}
+
 .left{float: left;}
 .right{float: right;}
 
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.toprightmenu .menuul li, .mainmenu .menuul li {
+    padding-right: 20px;
+}
+
+.toprightmenu{
+    margin: 0;
+    font-size: 12px;
+}
 .topmenu{
-    display: inline-block
+    font-size: 17px;
+}
+
+.topmenu, .menu{
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-content: space-between;
+    -ms-flex-line-pack: justify;
+    align-content: space-between;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding: 20px 20px;
+}
+
+
+.menuul{display: inline-block}
+    .menuul li{
+        display: inline-block;
+        float: left}
+
+
+.section{
+    min-height: 600px;
+}
+
+.section.one{
+    background-color: #00BCD4;
+    position: relative;
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    z-index: 1;
+    background-image: url('../img/ferrer_bienestar.jpg');
+    background-size: cover;
+}
+
+.gradient1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(123deg, #009ba6, #05cdda 20%, #09f0ff 90%);
+    content: "";
+    z-index: 98;
+    opacity: .7;
+}
+
+.contentsection{
+    z-index: 99;
+    position: absolute;
+    top: 45%;
+    left: 10%;
 }
