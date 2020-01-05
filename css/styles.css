@@ -1,0 +1,142 @@
+body{    
+    margin: 0 auto;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h2{font-size: 3em; font-weight: 800;}
+h3{font-size: 1.5em;}
+
+.wrap-container{
+    max-width: 1200px;
+    align-items: center;
+}
+
+.section{position: relative; height: 100vh;}
+.section a{color: white;text-decoration: underline}
+
+.left{float: left;}
+.right{float: right;}
+
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+nav:hover{
+    background-color: white;
+}
+
+nav:hover .toprightmenu .menuul li a, nav:hover .mainmenu .menuul li a{
+    color: #445870;
+}
+
+.toprightmenu .menuul li, .mainmenu .menuul li {
+    padding-right: 20px;
+}
+
+.toprightmenu .menuul li a, .mainmenu .menuul li a{
+    color: white;
+}
+
+.mainmenu .menuul li a{font-size: 18px}
+
+.toprightmenu{
+    margin: 0;
+    font-size: 12px;
+}
+.topmenu{
+    font-size: 17px;
+    border-bottom: 1px solid white;
+}
+
+.topmenu, .menu{
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-content: space-between;
+    -ms-flex-line-pack: justify;
+    align-content: space-between;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding: 20px 20px;
+}
+
+
+.menuul{display: inline-block}
+    .menuul li{
+        display: inline-block;
+        float: left}
+
+
+.section{
+    min-height: 600px;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    z-index: 1;
+}
+
+.section.one{
+    background-color: #00BCD4;
+    background-image: url('../img/ferrer_bienestar.jpg');
+    background-size: cover;
+}
+
+.gradient1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(123deg, #009ba6, #05cdda 20%, #09f0ff 90%);
+    content: "";
+    z-index: 98;
+    opacity: .7;
+}
+
+.section.two{
+    background-color: #00BCD4;
+    background-image: url('../img/ferrer_compromiso.jpg');
+    background-size: cover;
+}
+
+.gradient2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(309deg, #84bd00, #b5ff0a);
+    content: "";
+    z-index: 98;
+    opacity: .7;
+}
+
+.contentsection{
+    z-index: 99;
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    max-width: 700px;
+}
