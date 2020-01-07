@@ -12,5 +12,6 @@ Esto son los ejercicios del curso de Git de Platzi.
 - Trabajar de forma correcta con la mejor tecnología.
 - Creado por el increibe platzi team.
 - Incluye ejemplos en windows, linux y Mac.
+- Disponible para todas las edades.
 
 El curso lo he tomado en [Curso Git-Github Platzi](https://platzi.com/cursos/git-github "Curso Git-Github Platzi"). Con una suscripción podrás aprender tu también.
