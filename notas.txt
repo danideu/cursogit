@@ -1,0 +1,40 @@
+- git status -> Para ver si queda algo por subir al repositorio.
+
+- git add -A -> Para subir archivos al commit.
+
+- git add -am "Texto del commit" -> Hacer un commit añadiendo comentario
+
+- git pull origin master -> Se trae los cambios de remoto de la rama Master.
+- git push origin master -> Sube los cambios al remoto de la rama Master.
+
+ESC + SHIFT + Z + Z -> Para salir de la ventana de dar mensaje a los commits
+
+- FORK -> Copia del estado actual del proyecto en tu repositorio. Una vez copiado se hacen modificaciones y para pedir que esas modificaciones puedan subirse al proyecto origianl, se hacen PULL REQUEST.
+
+- Editor.md -> Web que nos ayuda a crear un readm.md.
+
+- gitk -> es un programa donde se ve de forma visual la historia del git que viene con el sistema operativo.
+
+- github pages
+
+- git rebase -> Coge una rama y la pega a la rama muestra. ** Solo hay que hacerlo internamente no en remoto.
+
+- git stash -> Guardar cambios en memoria para recuperarlos después. Cuando ejecutas este comando, vuelven los archivos al cambio anterior.
+	- git stash list -> Ver el listado de stashs.
+	- git stash pop -> Para recuperar el cambio.
+	- git stash branch ramaquequieras -> Para pasar esos cambios de memoria a una rama que le indiquemos.
+	- git stash drop -> Para borrar el stash de memoria.
+
+- git clean -> Si por error hemos hecho copia de varios archivos y queremos borrar del status para no hacer commit de ellos.
+
+	- git clean --dry-run -> Muestra los archivos que va a borrar el git clean.
+	- git clean -f -> Borra los archivos.
+
+- git cherry-pick -> Traer commits viejos al head de una rama. Por ejemplo si creamos una rama "readme-mejorado" y vamos haciendo varios commits con modificaciones. Después vamos a la rama master y nuestro jefe nos dice que quiere solo los cambios de un commit, para eso sirve cherry-pick, para incluir solo los cambios de un commit. De esta forma podemos ver los commits sin ver la rama nueva que habiamos creado. Para ello nos vamos a la rama master y hacemos lo siguiente para ver los códigos de los commits.
+	1) Nos vamos a la rama readme-mejorado -> git checkout readme-mejorado
+	2) Hacemos git log --oneline
+	3) Copiamos el código del commit que queramos.
+	4) Vamos a la rama master -> git checkout master
+	5) El código que hemos copiado es este: 18aeca4
+	6) Escribimos git cherry-pick 18aeca4
+Con esto habremos 
