@@ -7,6 +7,9 @@
 - git pull origin master -> Se trae los cambios de remoto de la rama Master.
 - git push origin master -> Sube los cambios al remoto de la rama Master.
 
+- git branch nombrerama -> Crea la rama nombrerama
+- git branch -D nombrerama -> Borra la rama nombrerama
+
 ESC + SHIFT + Z + Z -> Para salir de la ventana de dar mensaje a los commits
 
 - FORK -> Copia del estado actual del proyecto en tu repositorio. Una vez copiado se hacen modificaciones y para pedir que esas modificaciones puedan subirse al proyecto origianl, se hacen PULL REQUEST.
@@ -38,3 +41,14 @@ ESC + SHIFT + Z + Z -> Para salir de la ventana de dar mensaje a los commits
 	5) El código que hemos copiado es este: 18aeca4
 	6) Escribimos git cherry-pick 18aeca4
 Con esto habremos 
+
+
+- git commit --amend: Esto lo que hace es copiar el commit al anterior. Esto puede pasar porque se te ha olvidado incluir una modificación.
+
+- git reflog -> Te muestra todos los estados de los commits.
+
+- git reset -> PAra volver a los cambios de otro commit.
+	- git reset SOFT hash -> Regresa al cambio pero te mantiene el staging.
+	- git reset HARD hash -> Regresa al cambio pero y te borra también el staging. Donde el has especifico es un número o nombre (HEAD) que se puede ver en el git reflog.
+
+
